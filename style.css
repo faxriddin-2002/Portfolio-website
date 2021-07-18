@@ -5,6 +5,7 @@ body {
     box-sizing:border-box;
     height: auto;
     display: grid;
+    /* overflow-y: hidden; */
 }
 /*home page */
 .page-one { 
@@ -14,6 +15,7 @@ body {
     background-image: url(nature.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /* overflow-y: hidden; */
 }
 
 .page-one .font {
@@ -30,97 +32,23 @@ body {
     display: grid;
 }
 
-.contener .navbar {
-    position: relative;
-    background-color: inherit;
-    width: 100%;
-    height: 70px;
-    display: flex;
+#navbar {
+    margin-top: -150px;
 }
 
-.navbar .navbar-logo {
-    position: relative;
-    font-size: 20px;
-    font-family: sans-serif;
-    font-weight: 600;
-    color: white;
-}
-
-.navbar .navbar-item-left {
-    height: auto;
-    position: relative;
-}
-
-.navbar .navbar-item-left ul {    
-    position: relative;
-    display: flex;
-    vertical-align: center;
-    top: 6px;
-}
-
-.navbar .navbar-item-left .ulClass {
-    display: block;
-
-}
-
-.navbar .navbar-item-left ul li {
-    list-style-type: none;
-    text-align: right;
-    justify-content: right;
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: 500;
-    vertical-align: center;
-    color: white;
-}
-
-.navbar .navbar-item-left ul li a {
-    font-style: none;
-    font-family: sans-serif;
-    color: white;
-    text-decoration: none;
-    float: left;
-    display:  flex;
-    text-align: right;
-    margin-left: 25px;
-}
-
-.navbar .navbar-item-left ul li .aClass {
-    display: block;
-    margin-top: 20px;
-}
-
-.navbar .navbar-item-left i {
-    display: none;
-}
-
-.navbar .navbar-item-left .iconjon {
-  transform: rotate(90deg);
-}
-
-@media screen and (max-width: 900px) {
-    .navbar .navbar-item-left ul {
-        display: none;
-    }
-    .navbar .navbar-item-left i {
-        display: block;
-        color: white;
-        font-size: 30px
-    }
-
-    .navbar .navbar-item-left i:hover {
-        color: red;
-        cursor: pointer;
-        font-size: 29px;
+@media  screen and (max-width: 900px){
+    #navbar {
+        margin-top: -50px;
     }
 }
 
-.navbar .navbar-item-left ul li a:hover {
+#navbar a:hover {
     cursor: pointer;
     color: red;
     font-size: 17px;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
 } 
+
 
 .contener .center-text {
     text-align: center;

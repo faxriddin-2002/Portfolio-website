@@ -19,22 +19,46 @@
     <div class="page-one" id="home-page">
         <div class="font">
             <div class="contener">
-                <!-- navbar -->
-                <div class="navbar">
-                    <div class="navbar-logo">
-                        <h3>Faxriddin</h3>
-                    </div>
-                    <div class="navbar-item-left">
-                        <ul>
-                            <li><a href="#home-page">Home</a></li>
-                            <li><a href="#about-us">About Us</a></li>
-                            <li><a href="#service">Service</a></li>
-                            <li><a href="#My-Skills">My Skills</a></li>
-                            <li><a href="#Contactus">Contact Us</a></li>
+              <!--navbar-->
+              <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand text-white" href="#">Faxriddin</a>
+                  <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-align-justify"></i></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#home-page">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#about-us">About Us</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#My-Skills" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          My Skills
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#My-Skills">Webdesigner</a></li>
+                          <li><a class="dropdown-item" href="#My-Skills">Webdeveloper</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#My-Skills">Algorithm Pathle</a></li>
                         </ul>
-                        <i class="fas fa-bars"></i>    
-                    </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#service" tabindex="-1" aria-disabled="true">Service</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#Contactus" tabindex="-1" aria-disabled="true">Contact Me</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
                 </div>
+              </nav>
                 <!-- center text -->
                 <div class="center-text">
                      <h1>HELLO</h1>
@@ -183,8 +207,8 @@
   </div>
 
 
-    <script src="bootstrap.js"></script>
+  <script src="screept.js"></script>
     <script src="Jquery.js"></script>
-    <script src="screept.js"></script>
+    <script src="bootstrap.js"></script>
 </body>
 </html>
